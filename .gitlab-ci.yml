@@ -6,8 +6,8 @@ sync_with_github:
   script:
     - git config --global user.email "georgpohl@gmx.de"
     - git config --global user.name "weltbester"
-    - git clone --mirror https://gitlab.com/weltbester/my-test-project.git
-    - cd your-gitlab-repo.git
+    - git clone --mirror: https://gitlab.com/weltbester/my-test-project.git
+    - cd my-test-project.git
     - git push --mirror https://$GITHUB_TOKEN@github.com/weltbester/my-test-project.git
   only:
     - main
